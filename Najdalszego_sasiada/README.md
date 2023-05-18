@@ -1,2 +1,1 @@
 # Najdalszego_sąsiada
-The spreadsheet zmienne.xlsx contains data on the districts of Warsaw and the variables assigned to them. The variables were used to create four groups: general, family, seniors and singles. Each group has a different set of variables. A dendrogram was created for each group to describe how similar the objects (the districts of Warsaw) are to each other. This folder uses the furthest neighbour method, which is used in classification and regression problems.

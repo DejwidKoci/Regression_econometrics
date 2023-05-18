@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 from sklearn.cluster import AgglomerativeClustering
 
 # loading data from an Excel sheet
-df = pd.read_excel('zmienne.xlsx', index_col = 0, sheet_name = '2021')
+df = pd.read_excel('zmienne.xlsx', index_col = 0, sheet_name = 'Rodzina 2017')
 
 # data normalisation
 df_norm = (df - df.mean()) / df.std()
@@ -14,8 +14,8 @@ df_norm = (df - df.mean()) / df.std()
 dist_matrix = linkage(df_norm, 'complete')
 
 # dendogram generation
-plt.figure(figsize=(10, 7))
-plt.title("Metoda najdalszego sąsiada dla grupy ogólnej dla 2021 roku")
+plt.figure(figsize = (10, 7))
+plt.title("Metoda najdalszego sąsiada dla grupy rodzin z dziećmi dla 2017 roku")
 dend = dendrogram(dist_matrix, labels = df.index, orientation = 'right')
 
 # show results
