@@ -1,1 +1,0 @@
-# Najdalszego_sąsiada
